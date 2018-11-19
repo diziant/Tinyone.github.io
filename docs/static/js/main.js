@@ -2,11 +2,6 @@ $(document).ready(function () {
 
     body = $("body");
 
-    body.addEventListener('touchmove', function (event) {
-        event.preventDefault();
-    }, false);
-
-
     let lastFocusedElement;
 
     $(".header__menu").click(function () {

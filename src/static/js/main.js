@@ -2,7 +2,6 @@ $(document).ready(function () {
 
     body = $("body");
 
-
     let lastFocusedElement;
 
     $(".header__menu").click(function () {
