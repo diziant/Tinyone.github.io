@@ -15,7 +15,7 @@ module.exports = function () {
 			}))
 			//.pipe($.gp.csso())
 			.pipe($.gp.sourcemaps.write())
-			.pipe($.gulp.dest('build/static/css/'))
+			.pipe($.gulp.dest(`${$.buildDir}/static/css/`))
 			.pipe($.bs.reload({
 				stream: true
 			}));
