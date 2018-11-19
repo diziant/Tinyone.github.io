@@ -1,0 +1,113 @@
+@import "./colors"
+
+html
+  font-size: 62.5%
+  height: 100%
+
+body
+  display: flex
+  flex-direction: column
+  height: 100%
+  margin: 0
+  font-family: 'SourceSansPro', Arial, sans-serif
+  font-size: 1.6rem
+
+*, *:before, *:after
+	box-sizing: border-box
+
+*::selection
+  color: #fff
+  background-color: $selected-text
+
+a:focus, button:focus, input:focus, textarea:focus
+  outline: 2px dashed $focus
+  outline-offset: .5rem
+
+button, input, textarea
+  font-family: 'SourceSansPro', Arial, sans-serif
+
+a
+  transition: color .3s cubic-bezier(0.6, 0.17, 1, 1.3)
+
+p
+  margin: 0 0 1.2rem
+
+.title
+  margin: 0
+
+.link
+  text-decoration: none
+
+  &:hover
+    color: $link-hover
+    text-decoration: underline
+
+.container
+  display: flex
+  flex-direction: column
+  min-width: 200px
+  max-width: 960px
+  margin: 0 auto
+
+.section
+  padding: 10rem 0
+
+  &__header
+    display: flex
+    justify-content: center
+    text-align: center
+
+  &__title
+    font-size: 3.2rem
+    margin-bottom: 1.5rem
+    color: $section-title
+
+    &:focus
+      outline: 2px dashed $focus
+      outline-offset: .5rem
+
+  &__description
+    color: $section-color
+    font-size: 2rem
+    line-height: 2.4rem
+
+  &__content
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+.button
+  font-family: 'SourceSansPro', Arial, sans-serif
+  cursor: pointer
+  border: 0
+  padding: 0
+  background: transparent
+  transition: color .3s cubic-bezier(0.6, 0.17, 1, 1.3) , transform ease-out .1s
+
+  &_with-border
+    font-weight: 700
+    color: $button-color
+    border: .2rem solid $button-color
+    text-transform: uppercase
+
+  &:active
+    transform: scale(1.03)
+
+.social
+  display: flex
+  
+  &__link
+    color: inherit
+    font-size: 0
+    margin-left: 1.5rem
+
+    &:hover
+      color: $social-hover
+
+    &:first-child
+      margin-left: 0
+
+.list
+  margin: 0
+  list-style: none
+

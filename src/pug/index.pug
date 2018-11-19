@@ -1,0 +1,433 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title CMC
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="static/css/main.css")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous")
+  body
+    .header-wrapper
+      header.header
+        .container.header__container
+          .header__item.col-4
+            button.button.header__menu Open menu
+              i.header__menu-icon.fas.fa-bars
+          .header__item.col-4
+            h1.title.header__logo
+              img.header__logo-item(src="static/img/fingerprint.png" alt="tinyone logo")
+              ="tinyone"
+          .header__item.col-4
+            .header__social.social
+              a.link.social__link(href="#") Facebook
+                i.fab.fa-facebook-f.header__social-icon
+              a.link.social__link(href="#") Twitter
+                i.fab.fa-twitter.header__social-icon
+              a.link.social__link(href="#") Google plus
+                i.fab.fa-google-plus-g.header__social-icon
+              a.link.social__link(href="#") Pinterest
+                i.fab.fa-pinterest.header__social-icon
+      .intro
+        .col-8
+          h2.title.intro__title Inspire your inspiration
+          .intro__inner Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+          button.button.button_with-border.intro__button get start
+      a.next-page(href="#") Jump to content
+        i.next-page__icon.fas.fa-long-arrow-alt-down
+    main.content
+      section.section.features(id="features")
+        .container
+          header.section__header
+            .col-10
+              h3.title.section__title(tabindex="0") Tinyone features
+              .section__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+          .section__content
+            .features__item.col-4
+              .features__logo
+                i.features__logo-icon.fas.fa-tablet-alt
+              .features__info
+                h4.title.features__title Fully Responsive
+                .features__text
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+            .features__item.col-4
+              .features__logo
+                i.features__logo-icon.far.fa-lemon
+              .features__info
+                h4.title.features__title Fully Layered PSD
+                .features__text
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+            .features__item.col-4
+              .features__logo
+                i.features__logo-icon.far.fa-folder
+              .features__info
+                h4.title.features__title Font Awesome Icons
+                .features__text
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+            .features__item.col-4
+              .features__logo
+                i.features__logo-icon.fas.fa-code
+              .features__info
+                h4.title.features__title HTML3 & CSS3 
+                .features__text
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+            .features__item.col-4
+              .features__logo
+                i.features__logo-icon.far.fa-envelope
+              .features__info
+                h4.title.features__title Email Template
+                .features__text
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+            .features__item.col-4
+              .features__logo
+                i.features__logo-icon.far.fa-bookmark
+              .features__info
+                h4.title.features__title Free to download
+                .features__text
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+
+      section.section.pricing(id="pricing")
+        .container
+          header.section__header
+            .col-10
+              h3.title.section__title(tabindex="0") Pricing And Free Trial
+              .section__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+          .section__content.pricing__content
+            .pricing__item.col-2
+              .pricing__circle.pricing__circle_grey
+                i.pricing__circle-icon.fas.fa-tablet-alt
+              h4.title.pricing__title Basic
+              .pricing__label Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              .pricing__cost
+                .pricing__cost-price free
+                .pricing__cost-term free forever
+              button.button.button_with-border.pricing__button get free now
+            .pricing__item.col-2
+              .pricing__circle.pricing__circle_black
+                i.pricing__circle-icon.fas.fa-laptop
+              h4.title.pricing__title Standart
+              .pricing__label Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              .pricing__cost
+                .pricing__cost-price $99
+                .pricing__cost-term month
+              button.button.button_with-border.pricing__button upgrade
+            .pricing__item.col-2
+              .pricing__circle.pricing__circle_grey
+                i.pricing__circle-icon.fas.fa-desktop
+              h4.title.pricing__title Enterprice
+              .pricing__label Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              .pricing__cost
+                .pricing__cost-price $199
+                .pricing__cost-term month
+              button.button.button_with-border.pricing__button learn more
+
+      section.section.portfolio(id="portfolio")
+        .container
+          header.section__header
+            .col-10
+              h3.title.section__title(tabindex="0") Our works
+              .section__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+          .section__content.portfolio__content
+            .portfolio__item.col-3
+              a.portfolio__link(href="#")
+                img.portfolio__photo(src="static/img/portfolio-photo-6.png" alt="portfolio picture")
+                .portfolio__inner
+                  .portfolio__inner-item
+                    i.portfolio__inner-icon.far.fa-eye
+                    span.portfolio__inner-views 279
+                  .portfolio__inner-item
+                    time.portfolio__inner-date(datetime="2014-03-07") 07/03/14
+                    i.portfolio__inner-icon.far.fa-clock
+                .portfolio__overlay
+                  i.portfolio__overlay-icon.fas.fa-plus-circle
+              h4.title.portfolio__title Fully Responsive
+              span.portfolio__description Design / Branding
+            .portfolio__item.col-3
+              a.portfolio__link(href="#")
+                img.portfolio__photo(src="static/img/portfolio-photo-1.png" alt="portfolio picture")
+                .portfolio__inner
+                  .portfolio__inner-item
+                    i.portfolio__inner-icon.far.fa-eye
+                    span.portfolio__inner-views 279
+                  .portfolio__inner-item
+                    time.portfolio__inner-date(datetime="2014-03-07") 07/03/14
+                    i.portfolio__inner-icon.far.fa-clock
+                .portfolio__overlay
+                  i.portfolio__overlay-icon.fas.fa-plus-circle
+              h4.title.portfolio__title Font Awesome Icons
+              span.portfolio__description Design / Branding
+            .portfolio__item.col-3
+              a.portfolio__link(href="#")
+                img.portfolio__photo(src="static/img/portfolio-photo-2.png" alt="portfolio picture")
+                .portfolio__inner
+                  .portfolio__inner-item
+                    i.portfolio__inner-icon.far.fa-eye
+                    span.portfolio__inner-views 279
+                  .portfolio__inner-item
+                    time.portfolio__inner-date(datetime="2014-03-07") 07/03/14
+                    i.portfolio__inner-icon.far.fa-clock
+                .portfolio__overlay
+                  i.portfolio__overlay-icon.fas.fa-plus-circle
+              h4.title.portfolio__title HTML3 & CSS3 
+              span.portfolio__description App design / development
+            .portfolio__item.col-3
+              a.portfolio__link(href="#")
+                img.portfolio__photo(src="static/img/portfolio-photo-3.png" alt="portfolio picture")
+                .portfolio__inner
+                  .portfolio__inner-item
+                    i.portfolio__inner-icon.far.fa-eye
+                    span.portfolio__inner-views 279
+                  .portfolio__inner-item
+                    time.portfolio__inner-date(datetime="2014-03-07") 07/03/14
+                    i.portfolio__inner-icon.far.fa-clock
+                .portfolio__overlay
+                  i.portfolio__overlay-icon.fas.fa-plus-circle
+              h4.title.portfolio__title Various Layouts
+              span.portfolio__description Branding
+            .portfolio__item.col-3
+              a.portfolio__link(href="#")
+                img.portfolio__photo(src="static/img/portfolio-photo-4.png" alt="portfolio picture")
+                .portfolio__inner
+                  .portfolio__inner-item
+                    i.portfolio__inner-icon.far.fa-eye
+                    span.portfolio__inner-views 279
+                  .portfolio__inner-item
+                    time.portfolio__inner-date(datetime="2014-03-07") 07/03/14
+                    i.portfolio__inner-icon.far.fa-clock
+                .portfolio__overlay
+                  i.portfolio__overlay-icon.fas.fa-plus-circle
+              h4.title.portfolio__title Fully Responsive
+              span.portfolio__description Design / Branding
+            .portfolio__item.col-3
+              a.portfolio__link(href="#")
+                img.portfolio__photo(src="static/img/portfolio-photo-5.png" alt="portfolio picture")
+                .portfolio__inner
+                  .portfolio__inner-item
+                    i.portfolio__inner-icon.far.fa-eye
+                    span.portfolio__inner-views 279
+                  .portfolio__inner-item
+                    time.portfolio__inner-date(datetime="2014-03-07") 07/03/14
+                    i.portfolio__inner-icon.far.fa-clock
+                .portfolio__overlay
+                  i.portfolio__overlay-icon.fas.fa-plus-circle
+              h4.title.portfolio__title Font Awesome Icons
+              span.portfolio__description Design / Branding
+            .portfolio__item.col-3
+              a.portfolio__link(href="#")
+                img.portfolio__photo(src="static/img/portfolio-photo-6.png" alt="portfolio picture")
+                .portfolio__inner
+                  .portfolio__inner-item
+                    i.portfolio__inner-icon.far.fa-eye
+                    span.portfolio__inner-views 279
+                  .portfolio__inner-item
+                    time.portfolio__inner-date(datetime="2014-03-07") 07/03/14
+                    i.portfolio__inner-icon.far.fa-clock
+                .portfolio__overlay
+                  i.portfolio__overlay-icon.fas.fa-plus-circle
+              h4.title.portfolio__title HTML3 & CSS3 
+              span.portfolio__description App design / development
+            .portfolio__item.col-3
+              a.portfolio__link(href="#")
+                img.portfolio__photo(src="static/img/portfolio-photo-7.png" alt="portfolio picture")
+                .portfolio__inner
+                  .portfolio__inner-item
+                    i.portfolio__inner-icon.far.fa-eye
+                    span.portfolio__inner-views 279
+                  .portfolio__inner-item
+                    time.portfolio__inner-date(datetime="2014-03-07") 07/03/14
+                    i.portfolio__inner-icon.far.fa-clock
+                .portfolio__overlay
+                  i.portfolio__overlay-icon.fas.fa-plus-circle
+              h4.title.portfolio__title Various Layouts
+              span.portfolio__description Branding
+      section.section.team(id="team")
+        .container
+          header.section__header
+            .col-10
+              h3.title.section__title(tabindex="0") Our team
+              .section__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+          .section__content.team__content
+            .team__item.col-3
+              .team__circle
+                img.team__photo(src="static/img/team-photo-1.png" alt="team picture")
+              a(href="#").link.team__name John Doe
+              span.team__label UI Designer
+              .team__description Lorem ipsum dolor sit amet, <a href="https://diziant.github.io/Responsive.github.io/"class="link team__inside-link">consectetur</a> adipiscing elit
+              .team__social.social
+                a.link.social__link(href="#") Facebook
+                  i.fab.fa-facebook-f.team__social-icon
+                a.link.social__link(href="#") Twitter
+                  i.fab.fa-twitter.team__social-icon
+                a.link.social__link(href="#") Google plus
+                  i.fab.fa-google-plus-g.team__social-icon
+            .team__item.col-3
+              .team__circle
+                img.team__photo(src="static/img/team-photo-2.png" alt="team picture")
+              a(href="#").link.team__name John Doe
+              span.team__label UI Designer
+              .team__description Lorem ipsum dolor sit amet, <a href="https://diziant.github.io/Responsive.github.io/"class="link team__inside-link">consectetur</a> adipiscing elit
+              .team__social.social
+                a.link.social__link(href="#") Facebook
+                  i.fab.fa-facebook-f.team__social-icon
+                a.link.social__link(href="#") Twitter
+                  i.fab.fa-twitter.team__social-icon
+                a.link.social__link(href="#") Google plus
+                  i.fab.fa-google-plus-g.team__social-icon
+            .team__item.col-3
+              .team__circle
+                img.team__photo(src="static/img/team-photo-3.png" alt="team picture")
+              a(href="#").link.team__name John Doe
+              span.team__label UI Designer
+              .team__description Lorem ipsum dolor sit amet, <a href="https://diziant.github.io/Responsive.github.io/"class="link team__inside-link">consectetur</a> adipiscing elit
+              .team__social.social
+                a.link.social__link(href="#") Facebook
+                  i.fab.fa-facebook-f.team__social-icon
+                a.link.social__link(href="#") Twitter
+                  i.fab.fa-twitter.team__social-icon
+                a.link.social__link(href="#") Google plus
+                  i.fab.fa-google-plus-g.team__social-icon
+            .team__item.col-3
+              .team__circle
+                img.team__photo(src="static/img/team-photo-4.png" alt="team picture")
+              a(href="#").link.team__name John Doe
+              span.team__label UI Designer
+              .team__description Lorem ipsum dolor sit amet, <a href="https://diziant.github.io/Responsive.github.io/"class="link team__inside-link">consectetur</a> adipiscing elit
+              .team__social.social
+                a.link.social__link(href="#") Facebook
+                  i.fab.fa-facebook-f.team__social-icon
+                a.link.social__link(href="#") Twitter
+                  i.fab.fa-twitter.team__social-icon
+                a.link.social__link(href="#") Google plus
+                  i.fab.fa-google-plus-g.team__social-icon
+      section.section.testimonial(id="testimonail")
+        .container
+          header.section__header
+            .col-10
+              h3.title.section__title(tabindex="0") Stats & Testimonial
+              .section__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+          .section__content.testimonial__content
+            .testimonial__item.col-2
+              i.fas.fa-puzzle-piece.testimonial__icon
+              span.testimonial__amount 20
+              span.testimonial__label Products
+            .testimonial__item.col-2
+              i.fas.fa-cloud-download-alt.testimonial__icon
+              span.testimonial__amount 120,000
+              span.testimonial__label Downloads
+            .testimonial__item.col-2
+              i.fas.fa-users.testimonial__icon
+              span.testimonial__amount 1200
+              span.testimonial__label Customers
+            .testimonial__item.col-2
+              i.fas.fa-thumbs-up.testimonial__icon
+              span.testimonial__amount 900
+              span.testimonial__label Like
+          .testimonial__say
+            .testimonial__say-item.col-2
+              .testimonial__say-circle
+                img.testimonial__say-photo(src="static/img/team-photo-1.png" alt="testimonial say picture")
+              span.testimonial__say-name John Doe
+              span.testimonial__say-label From Wỏdpress
+            .testimonial__say-quote.col-9
+              blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+      section.section.contact(id="contacts")
+        .container
+          header.section__header
+            .col-10
+              h3.title.section__title(tabindex="0") Keep in touch with us
+              .section__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+          .section__content.contact__content
+            .contact__item.col-2
+              i.fas.fa-map-marker-alt.contact__icon
+              span.contact__name Address
+              span.contact__label 66, Dang Van ngu, Dong Da, Ha noi, Vietnam
+            a.contact__item.col-2(href="mailto: contact@halovietnam.com")
+              i.fas.fa-envelope.contact__icon
+              span.contact__name E-mail
+              span.contact__label contact@halovietnam.com
+            a.contact__item.col-2(href="tel: +844123456789")
+              i.fas.fa-phone-square.contact__icon
+              span.contact__name Phone
+              span.contact__label +844 1234 56789
+          .contact__box
+            form.contact__form.col-8(name="contact form")
+              input.contact__input(type="email" placeholder="Email" name="email" value="" required)
+              input.contact__input(placeholder="Full name" name="full name" value="" required)
+              textarea.contact__textarea(placeholder="Message" name="message" value="")
+              button.button.button_with-border.contact__submit(type="submit") Send message
+
+    footer.footer
+      .container
+        section.section.subscrible(id="subscrible")
+          .container
+            header.section__header
+              .col-10
+                h3.title.section__title.subscrible__title(tabindex="0") Sign up for our newsletter
+                .section__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+            .section__content.subscrible__content
+              form.subscrible__form.col-10(name="subscrible form")
+                input.subscrible__input(type="email" placeholder="Enter your email to update" name="email" value="" required)
+                button.button.button_with-border.subscrible__submit(type="submit") Submit
+        .footer__widget
+          ul.list.footer__address.col-4
+            li.footer__address-item
+              span.footer__address-link(href="#") HALOVIETNAM LTD<br>66, Dang Van ngu, Dong Da<br>Hanoi, Vietnam
+            li.footer__address-item
+              a.link.footer__address-link(href="mailto: contact@halovietnam.com") contact@halovietnam.com
+            li.footer__address-item
+              a.link.footer__address-link(href="tel: +844123456789") +844 35149182
+          ul.footer__menu.list
+            li.footer__menu-item.col-2
+              ul.footer__menu-inner.list
+                li.footer__menu-inner-item
+                  a.link.footer__menu-link(href="#") Examples
+                li.footer__menu-inner-item
+                  a.link.footer__menu-link(href="#") Shop
+                li.footer__menu-inner-item
+                  a.link.footer__menu-link(href="#") License
+            li.footer__menu-item.col-2
+              ul.footer__menu-inner.list
+                li.footer__menu-inner-item
+                  a.link.footer__menu-link(href="#") Contact
+                li.footer__menu-inner-item
+                  a.link.footer__menu-link(href="#") About 
+                li.footer__menu-inner-item
+                  a.link.footer__menu-link(href="#") Privacy
+                li.footer__menu-inner-item
+                  a.link.footer__menu-link(href="#") Terms
+            li.footer__menu-item.col-2
+              ul.footer__menu-inner.list
+                li.footer__menu-inner-item
+                  a.link.footer__menu-link(href="#") Download
+                li.footer__menu-inner-item
+                  a.link.footer__menu-link(href="#") Support
+                li.footer__menu-inner-item
+                  a.link.footer__menu-link(href="#") Documents
+            li.footer__menu-item.col-2
+              ul.footer__menu-inner.list
+                li.footer__menu-inner-item
+                  a.link.footer__menu-link(href="#") Media
+                li.footer__menu-inner-item
+                  a.link.footer__menu-link(href="#") Blog
+                li.footer__menu-inner-item
+                  a.link.footer__menu-link(href="#") Forums
+    .mobile-menu
+      button(tabindex="0").button.mobile-menu__close Close menu
+        i.mobile-menu__icon.fas.fa-times
+      ul.mobile-menu__list.list
+        li.mobile-menu__list-item
+          a.link.mobile-menu__link(href="#" data-section="features") Features
+        li.mobile-menu__list-item
+          a.link.mobile-menu__link(href="#" data-section="pricing") Pricing
+        li.mobile-menu__list-item
+          a.link.mobile-menu__link(href="#" data-section="portfolio") Portfolio
+        li.mobile-menu__list-item
+          a.link.mobile-menu__link(href="#" data-section="team") Team
+        li.mobile-menu__list-item
+          a.link.mobile-menu__link(href="#" data-section="testimonial") Testimonial
+        li.mobile-menu__list-item
+          a.link.mobile-menu__link(href="#" data-section="contacts") Contacts
+        li.mobile-menu__list-item
+          a.link.mobile-menu__link(href="#" data-section="subscrible") Subscrible
+    
+    script(src="static/js/libs.min.js")
+    script(src="static/js/main.js")
