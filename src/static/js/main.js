@@ -2,6 +2,8 @@ $(document).ready(function () {
 
     body = $("body");
 
+    //menu-burger logic
+
     let lastFocusedElement;
 
     $(".header__menu").click(function () {
@@ -10,7 +12,7 @@ $(document).ready(function () {
 
 
         lastFocusedElement = document.activeElement;
-        $(".mobile-menu__close").focus();
+        $(".mobile-menu").focus();
     });
 
     $(".mobile-menu__close").click(function () {
@@ -22,15 +24,17 @@ $(document).ready(function () {
 
     //scroll to necessary section
 
-    $(".mobile-menu__link").click(function () {
+    $(".mobile-menu__link").click(function (event) {
+
         event.preventDefault();
+
+        body.removeClass("fullscreen-menu");
+        body.removeClass("modal-open");
+
         const $this = $(this)
 
         const necessarySection = $("body").find('#' + $this.data('section') + '.section')
         const necessaryTitle = $("body").find('#' + $this.data('section') + '.section .section__title')
-
-        body.removeClass("fullscreen-menu");
-        body.removeClass("modal-open");
 
         $('html, body').animate({ scrollTop: necessarySection.position().top }, 1200);
 
@@ -39,8 +43,9 @@ $(document).ready(function () {
 
     //scroll to content
 
-    $('.next-page').click(function () {
+    $('.next-page, .skip-to-content').click(function (event) {
         event.preventDefault();
         $('html, body').animate({ scrollTop: $('.content').position().top }, 1200);
+        $('.features .title').focus();
     });
 });

@@ -5,7 +5,7 @@ module.exports = function () {
         });
 
         $.gulp.task('img:build', function () {
-                return $.gulp.src('src/static/img/*.{png,jpeg,gif,svg}')
+                return $.gulp.src('src/static/img/*.{png,jpg,gif,svg}')
                         .pipe($.gulp.dest(`${$.buildDir}/static/img/`));
         });
 }

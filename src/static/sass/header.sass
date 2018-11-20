@@ -88,3 +88,24 @@
 
   50%
     transform: translateY(1rem)
+
+.skip-to-content
+  position: absolute
+  height: 1px
+  width: 1px
+  padding: .8rem
+  
+  background-color: #000
+  color: $header-bg
+  font-weight: 700
+  text-align: center
+
+  opacity: .8
+  overflow: hidden
+  clip: rect(1px,1px,1px,1px)
+
+  &:focus
+    height: auto
+    width: 100%
+    z-index: 20
+    clip: auto
