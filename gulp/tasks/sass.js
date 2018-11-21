@@ -1,6 +1,6 @@
 module.exports = function () {
 	$.gulp.task('sass', function () {
-		return $.gulp.src('src/static/sass/*.{sass,css}')
+		return $.gulp.src('src/static/sass/*.{scss,sass,css}')
 			.pipe($.gp.sourcemaps.init())
 			.pipe($.gp.sass({
 				'include css': true,
@@ -14,7 +14,7 @@ module.exports = function () {
 				title: "style"
 			}))
 			.pipe($.gp.csso())
-			.pipe($.gp.sourcemaps.write())
+			.pipe($.gp.sourcemaps.write('./'))
 			.pipe($.gulp.dest(`${$.buildDir}/static/css/`))
 			.pipe($.bs.reload({
 				stream: true

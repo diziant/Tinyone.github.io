@@ -1,5 +1,5 @@
 node_modules 
 build
-.publish
+*.map
 
 .DS_Store
