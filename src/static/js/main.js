@@ -48,4 +48,12 @@ $(document).ready(function () {
         $('html, body').animate({ scrollTop: $('.content').position().top }, 1200);
         $('.features .title').focus();
     });
+
+    //add fonts
+
+    let font = new FontFaceObserver('SourceSansPro');
+
+    font.load().then(function () {
+        body.addClass("fonts-loaded");
+    });
 });
